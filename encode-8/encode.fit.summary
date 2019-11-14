@@ -1,0 +1,12 @@
+Flow Status : Successful - Sat Feb 18 13:50:12 2006
+Quartus II Version : 5.0 Build 148 04/26/2005 SJ Full Version
+Revision Name : encode
+Top-level Entity Name : encode
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Met timing requirements : N/A
+Total logic elements : 14 / 1,270 ( 1 % )
+Total pins : 24 / 116 ( 20 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

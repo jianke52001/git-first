@@ -1,0 +1,199 @@
+Analysis & Synthesis report for encode
+Sat Feb 18 13:50:06 2006
+Version 5.0 Build 148 04/26/2005 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Analysis & Synthesis Equations
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2005 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic       
+functions, and any output files any of the foregoing           
+(including device programming or simulation files), and any    
+associated documentation or information are expressly subject  
+to the terms and conditions of the Altera Program License      
+Subscription Agreement, Altera MegaCore Function License       
+Agreement, or other applicable license agreement, including,   
+without limitation, that your use is for the sole purpose of   
+programming logic devices manufactured by Altera and sold by   
+Altera or its authorized distributors.  Please refer to the    
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                           ;
++-----------------------------+------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sat Feb 18 13:50:06 2006    ;
+; Quartus II Version          ; 5.0 Build 148 04/26/2005 SJ Full Version ;
+; Revision Name               ; encode                                   ;
+; Top-level Entity Name       ; encode                                   ;
+; Family                      ; MAX II                                   ;
+; Total logic elements        ; 14                                       ;
+; Total pins                  ; 24                                       ;
+; Total virtual pins          ; 0                                        ;
+; UFM blocks                  ; 0                                        ;
++-----------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                      ;
++--------------------------------------------------------------------+---------------+---------------+
+; Option                                                             ; Setting       ; Default Value ;
++--------------------------------------------------------------------+---------------+---------------+
+; Device                                                             ; EPM1270T144C5 ;               ;
+; Top-level entity name                                              ; encode        ; encode        ;
+; Family name                                                        ; MAX II        ; Stratix       ;
+; Use smart compilation                                              ; Off           ; Off           ;
+; Restructure Multiplexers                                           ; Auto          ; Auto          ;
+; Create Debugging Nodes for IP Cores                                ; off           ; off           ;
+; Preserve fewer node names                                          ; On            ; On            ;
+; Disable OpenCore Plus hardware evaluation                          ; Off           ; Off           ;
+; Verilog Version                                                    ; Verilog_2001  ; Verilog_2001  ;
+; VHDL Version                                                       ; VHDL93        ; VHDL93        ;
+; State Machine Processing                                           ; Auto          ; Auto          ;
+; Extract Verilog State Machines                                     ; On            ; On            ;
+; Extract VHDL State Machines                                        ; On            ; On            ;
+; Add Pass-Through Logic to Inferred RAMs                            ; On            ; On            ;
+; NOT Gate Push-Back                                                 ; On            ; On            ;
+; Power-Up Don't Care                                                ; On            ; On            ;
+; Remove Redundant Logic Cells                                       ; Off           ; Off           ;
+; Remove Duplicate Registers                                         ; On            ; On            ;
+; Ignore CARRY Buffers                                               ; Off           ; Off           ;
+; Ignore CASCADE Buffers                                             ; Off           ; Off           ;
+; Ignore GLOBAL Buffers                                              ; Off           ; Off           ;
+; Ignore ROW GLOBAL Buffers                                          ; Off           ; Off           ;
+; Ignore LCELL Buffers                                               ; Off           ; Off           ;
+; Ignore SOFT Buffers                                                ; On            ; On            ;
+; Limit AHDL Integers to 32 Bits                                     ; Off           ; Off           ;
+; Optimization Technique -- MAX II                                   ; Balanced      ; Balanced      ;
+; Carry Chain Length -- Stratix/Stratix GX/Cyclone/MAX II/Cyclone II ; 70            ; 70            ;
+; Auto Carry Chains                                                  ; On            ; On            ;
+; Auto Open-Drain Pins                                               ; On            ; On            ;
+; Remove Duplicate Logic                                             ; On            ; On            ;
+; Perform WYSIWYG Primitive Resynthesis                              ; Off           ; Off           ;
+; Perform gate-level register retiming                               ; Off           ; Off           ;
+; Allow register retiming to trade off Tsu/Tco with Fmax             ; On            ; On            ;
+; Auto Shift Register Replacement                                    ; On            ; On            ;
+; Auto Clock Enable Replacement                                      ; On            ; On            ;
+; Allows Synchronous Control Signal Usage in Normal Mode Logic Cells ; On            ; On            ;
+; Auto RAM Block Balancing                                           ; On            ; On            ;
+; Auto Resource Sharing                                              ; Off           ; Off           ;
+; Maximum Number of M512 Memory Blocks                               ; -1            ; -1            ;
+; Maximum Number of M4K Memory Blocks                                ; -1            ; -1            ;
+; Maximum Number of M-RAM Memory Blocks                              ; -1            ; -1            ;
+; Ignore translate_off and translate_on Synthesis Directives         ; Off           ; Off           ;
+; Show Parameter Settings Tables in Synthesis Report                 ; On            ; On            ;
++--------------------------------------------------------------------+---------------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+
+; encode.v                         ; yes             ; User Verilog HDL File  ; E:/Cindy/DevelopBoard/EDA主板/max1270/示例程序/veriloge/基础实验/8位优先编码器/encode.v ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++---------------------------------+-----------+
+; Resource                        ; Usage     ;
++---------------------------------+-----------+
+; Total logic elements            ; 14        ;
+; Total combinational functions   ; 14        ;
+;     -- Total 4-input functions  ; 13        ;
+;     -- Total 3-input functions  ; 1         ;
+;     -- Total 2-input functions  ; 0         ;
+;     -- Total 1-input functions  ; 0         ;
+;     -- Total 0-input functions  ; 0         ;
+; Combinational cells for routing ; 0         ;
+; Total registers                 ; 0         ;
+; I/O pins                        ; 24        ;
+; Maximum fan-out node            ; a[8]      ;
+; Maximum fan-out                 ; 7         ;
+; Total fan-out                   ; 62        ;
+; Average fan-out                 ; 1.63      ;
++---------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+---------------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Full Hierarchy Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+---------------------+
+; |encode                    ; 14 (14)     ; 0            ; 0          ; 24   ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; |encode             ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+---------------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------+
+; Analysis & Synthesis Equations ;
++--------------------------------+
+The equations can be found in E:/Cindy/DevelopBoard/EDA主板/max1270/示例程序/veriloge/基础实验/8位优先编码器/encode.map.eqn.
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 5.0 Build 148 04/26/2005 SJ Full Version
+    Info: Processing started: Sat Feb 18 13:50:04 2006
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off encode -c encode
+Info: Found 1 design units, including 1 entities, in source file encode.v
+    Info: Found entity 1: encode
+Info: Elaborating entity "encode" for the top level hierarchy
+Warning: Verilog HDL assignment warning at encode.v(19): truncated value with size 32 to match size of target (4)
+Warning: Verilog HDL assignment warning at encode.v(22): truncated value with size 32 to match size of target (4)
+Warning: Output pins are stuck at VCC or GND
+    Warning: Pin "c[0]" stuck at VCC
+    Warning: Pin "en[0]" stuck at GND
+    Warning: Pin "en[1]" stuck at VCC
+    Warning: Pin "en[2]" stuck at VCC
+    Warning: Pin "en[3]" stuck at VCC
+    Warning: Pin "en[4]" stuck at VCC
+    Warning: Pin "en[5]" stuck at VCC
+    Warning: Pin "en[6]" stuck at VCC
+    Warning: Pin "en[7]" stuck at VCC
+Info: Implemented 38 device resources after synthesis - the final resource count might be different
+    Info: Implemented 8 input pins
+    Info: Implemented 16 output pins
+    Info: Implemented 14 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Processing ended: Sat Feb 18 13:50:06 2006
+    Info: Elapsed time: 00:00:03
+
+

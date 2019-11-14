@@ -1,0 +1,6 @@
+$VAR1 = {
+          'encode.v' => {
+                          '-path' => 'e:/work1/',
+                          'encode.vhd' => 1
+                        }
+        };

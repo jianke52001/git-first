@@ -1,0 +1,40 @@
+|encode
+a[1] => c_tmp~0.DATAA
+a[2] => c_tmp~1.DATAA
+a[2] => c_tmp~0.OUTPUTSELECT
+a[3] => c_tmp~1.OUTPUTSELECT
+a[3] => c_tmp~2.OUTPUTSELECT
+a[4] => c_tmp~5.DATAA
+a[4] => c_tmp~3.OUTPUTSELECT
+a[4] => c_tmp~4.OUTPUTSELECT
+a[5] => c_tmp~5.OUTPUTSELECT
+a[5] => c_tmp~6.OUTPUTSELECT
+a[5] => c_tmp~7.OUTPUTSELECT
+a[6] => c_tmp~8.OUTPUTSELECT
+a[6] => c_tmp~9.OUTPUTSELECT
+a[6] => c_tmp~10.OUTPUTSELECT
+a[7] => c_tmp~11.OUTPUTSELECT
+a[7] => c_tmp~12.OUTPUTSELECT
+a[7] => c_tmp~13.OUTPUTSELECT
+a[8] => c_tmp[2].OUTPUTSELECT
+a[8] => c_tmp[1].OUTPUTSELECT
+a[8] => c_tmp[0].OUTPUTSELECT
+a[8] => Decoder~0.IN0
+c[0] <= <VCC>
+c[1] <= reduce_or~6.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= reduce_or~5.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= reduce_or~4.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= reduce_or~3.DB_MAX_OUTPUT_PORT_TYPE
+c[5] <= reduce_or~2.DB_MAX_OUTPUT_PORT_TYPE
+c[6] <= reduce_or~1.DB_MAX_OUTPUT_PORT_TYPE
+c[7] <= reduce_or~0.DB_MAX_OUTPUT_PORT_TYPE
+en[0] <= <GND>
+en[1] <= <VCC>
+en[2] <= <VCC>
+en[3] <= <VCC>
+en[4] <= <VCC>
+en[5] <= <VCC>
+en[6] <= <VCC>
+en[7] <= <VCC>
+
+

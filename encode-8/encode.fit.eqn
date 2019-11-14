@@ -1,0 +1,241 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--A1L91 is c_tmp~363 at LC_X14_Y7_N2
+--operation mode is normal
+
+A1L91 = a[6] # a[5] # a[7] # a[4];
+
+
+--A1L02 is c_tmp~364 at LC_X14_Y7_N3
+--operation mode is normal
+
+A1L02 = !a[4] & (a[3] # a[2]);
+
+
+--A1L12 is c_tmp~365 at LC_X14_Y7_N4
+--operation mode is normal
+
+A1L12 = a[6] # a[7] # !a[5] & A1L02;
+
+
+--A1L22 is c_tmp~366 at LC_X14_Y7_N7
+--operation mode is normal
+
+A1L22 = !a[4] & (a[3] # !a[2] & a[1]);
+
+
+--A1L32 is c_tmp~367 at LC_X14_Y7_N8
+--operation mode is normal
+
+A1L32 = a[7] # !a[6] & (a[5] # A1L22);
+
+
+--A1L53 is reduce_or~512 at LC_X14_Y7_N9
+--operation mode is normal
+
+A1L53 = !a[8] & (A1L91 & A1L12 & A1L32 # !A1L91 & (A1L12 # A1L32));
+
+
+--A1L63 is reduce_or~513 at LC_X14_Y7_N1
+--operation mode is normal
+
+A1L63 = !a[8] & (A1L32 # A1L91 & !A1L12);
+
+
+--A1L73 is reduce_or~514 at LC_X14_Y7_N0
+--operation mode is normal
+
+A1L73 = a[8] # A1L91 & (A1L12 $ A1L32) # !A1L91 & (A1L12 # !A1L32);
+
+
+--A1L83 is reduce_or~515 at LC_X14_Y7_N5
+--operation mode is normal
+
+A1L83 = !a[8] & !A1L12 & (A1L91 $ A1L32);
+
+
+--A1L93 is reduce_or~516 at LC_X13_Y7_N0
+--operation mode is normal
+
+A1L93 = a[7] # a[8] # !a[6] & !a[5];
+
+
+--A1L04 is reduce_or~517 at LC_X13_Y7_N3
+--operation mode is normal
+
+A1L04 = a[8] # !a[7] & (a[6] # A1L33);
+
+
+--A1L33 is reduce_or~485 at LC_X13_Y7_N2
+--operation mode is normal
+
+A1L33 = a[3] # a[5] # a[4] # a[2];
+
+
+--A1L14 is reduce_or~518 at LC_X14_Y7_N6
+--operation mode is normal
+
+A1L14 = !a[7] & !a[5] & !a[6] & A1L43;
+
+
+--A1L43 is reduce_or~500 at LC_X13_Y7_N7
+--operation mode is normal
+
+A1L43 = !a[4] & !a[8] & !a[3] & a[2];
+
+
+--a[7] is a[7] at PIN_61
+--operation mode is input
+
+a[7] = INPUT();
+
+
+--a[6] is a[6] at PIN_62
+--operation mode is input
+
+a[6] = INPUT();
+
+
+--a[5] is a[5] at PIN_63
+--operation mode is input
+
+a[5] = INPUT();
+
+
+--a[4] is a[4] at PIN_67
+--operation mode is input
+
+a[4] = INPUT();
+
+
+--a[3] is a[3] at PIN_68
+--operation mode is input
+
+a[3] = INPUT();
+
+
+--a[2] is a[2] at PIN_69
+--operation mode is input
+
+a[2] = INPUT();
+
+
+--a[1] is a[1] at PIN_71
+--operation mode is input
+
+a[1] = INPUT();
+
+
+--a[8] is a[8] at PIN_60
+--operation mode is input
+
+a[8] = INPUT();
+
+
+--c[0] is c[0] at PIN_120
+--operation mode is output
+
+c[0] = OUTPUT(VCC);
+
+
+--c[1] is c[1] at PIN_119
+--operation mode is output
+
+c[1] = OUTPUT(!A1L04);
+
+
+--c[2] is c[2] at PIN_117
+--operation mode is output
+
+c[2] = OUTPUT(A1L53);
+
+
+--c[3] is c[3] at PIN_114
+--operation mode is output
+
+c[3] = OUTPUT(A1L63);
+
+
+--c[4] is c[4] at PIN_113
+--operation mode is output
+
+c[4] = OUTPUT(!A1L73);
+
+
+--c[5] is c[5] at PIN_111
+--operation mode is output
+
+c[5] = OUTPUT(A1L14);
+
+
+--c[6] is c[6] at PIN_108
+--operation mode is output
+
+c[6] = OUTPUT(!A1L93);
+
+
+--c[7] is c[7] at PIN_109
+--operation mode is output
+
+c[7] = OUTPUT(A1L83);
+
+
+--en[0] is en[0] at PIN_134
+--operation mode is output
+
+en[0] = OUTPUT(GND);
+
+
+--en[1] is en[1] at PIN_133
+--operation mode is output
+
+en[1] = OUTPUT(VCC);
+
+
+--en[2] is en[2] at PIN_124
+--operation mode is output
+
+en[2] = OUTPUT(VCC);
+
+
+--en[3] is en[3] at PIN_123
+--operation mode is output
+
+en[3] = OUTPUT(VCC);
+
+
+--en[4] is en[4] at PIN_121
+--operation mode is output
+
+en[4] = OUTPUT(VCC);
+
+
+--en[5] is en[5] at PIN_125
+--operation mode is output
+
+en[5] = OUTPUT(VCC);
+
+
+--en[6] is en[6] at PIN_131
+--operation mode is output
+
+en[6] = OUTPUT(VCC);
+
+
+--en[7] is en[7] at PIN_132
+--operation mode is output
+
+en[7] = OUTPUT(VCC);
+
+
